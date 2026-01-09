@@ -171,7 +171,7 @@ export default function BoothPerformancePage() {
                                 <YAxis dataKey="name" type="category" stroke="#666" fontSize={12} width={120} />
                                 <Tooltip
                                     contentStyle={{ backgroundColor: "#1e1e2e", border: "1px solid #333", borderRadius: "8px" }}
-                                    formatter={(value: number) => formatCurrency(value)}
+                                    formatter={(value) => formatCurrency(value as number)}
                                 />
                                 <Legend />
                                 <Bar dataKey="revenue" fill="#8b5cf6" name="Revenue" radius={[0, 4, 4, 0]} />

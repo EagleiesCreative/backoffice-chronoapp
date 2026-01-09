@@ -37,7 +37,6 @@ import {
     IconSend,
     IconTrash,
     IconArchive,
-    IconMegaphone,
     IconAlertCircle,
     IconInfoCircle,
     IconTool,
