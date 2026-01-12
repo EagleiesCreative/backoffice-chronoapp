@@ -40,7 +40,7 @@ import {
 interface Ticket {
     id: string;
     ticket_number: number;
-    subject: string;
+    title: string;
     description: string;
     category: string;
     priority: string;
@@ -251,7 +251,7 @@ export default function SupportPage() {
                                         <TableRow key={ticket.id}>
                                             <TableCell className="font-mono">#{ticket.ticket_number}</TableCell>
                                             <TableCell>
-                                                <div className="font-medium">{ticket.subject}</div>
+                                                <div className="font-medium">{ticket.title}</div>
                                                 <div className="text-sm text-muted-foreground truncate max-w-[250px]">{ticket.description}</div>
                                             </TableCell>
                                             <TableCell>

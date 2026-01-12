@@ -14,7 +14,7 @@ export async function GET(request: NextRequest) {
         const priority = searchParams.get('priority') || 'all';
 
         let query = supabaseAdmin
-            .from('support_tickets')
+            .from('tickets')
             .select('*')
             .order('created_at', { ascending: false });
 
@@ -97,7 +97,7 @@ export async function PUT(request: NextRequest) {
         }
 
         const { data, error } = await supabaseAdmin
-            .from('support_tickets')
+            .from('tickets')
             .update(updateData)
             .eq('id', id)
             .select()
